@@ -1,4 +1,4 @@
-import 'package:contact_layout/world_time.dart';
+import 'package:contact_layout/screens/json_http.dart';
 import 'package:flutter/material.dart';
 import 'enter_form.dart';
 import 'play_video.dart';
@@ -145,7 +145,7 @@ class _MyAppState extends State<MyApp> {
               height: 1,
             ),
             Row(
-              mainAxisAlignment: MainAxisAlignment.,
+              mainAxisAlignment: MainAxisAlignment.start,
               children: [
                 Expanded(
                   child: ElevatedButton.icon(
@@ -178,12 +178,10 @@ class _MyAppState extends State<MyApp> {
                         Navigator.push(
                             context,
                             MaterialPageRoute(
-                                builder: (context) => WorldTime()));
+                                builder: (context) => JsonWidget()));
                       },
-                      icon: Icon(
-                        Icons.timer,
-                      ),
-                      label: Text('New Page')),
+                      icon: Icon(Icons.web),
+                      label: Text('Json HTTP')),
                 )
               ],
             )
